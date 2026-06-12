@@ -5,7 +5,7 @@ K_Means = __import__('2-k_means').K_Means
 
 
 def optimal_k(X, max_clusters, random_state):
-    """Evaluates K-Means clustering quality using inertia and silhouette score"""
+    """Evaluates K-Means clustering quality using score"""
     ks = list(range(2, max_clusters + 1))
     inertia_values = []
     silhouette_values = []
